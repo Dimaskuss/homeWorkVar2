@@ -5,8 +5,10 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
+        task6();
+        task7();
     }
-
     public static void task1 () {
         System.out.println("Задача 1");
         int dima = 1;
@@ -67,9 +69,59 @@ System.out.println("Всего учеников : " + children);
 
         time = 60 * 24 * 30;
         System.out.println("За " + time + " минут (Месяц) машина произвела " + bottles * time + " штук бутылок.");
+        System.out.println();
+    }
+    public static void task5 () {
+        System.out.println("Задача 5");
+        System.out.println();
+
+        byte cans = 120;
+        byte canWhite = 2;
+         byte canBrown = 4;
+         int classes = cans / ( canWhite + canBrown );
+         int allWhite = classes * canWhite;
+         int allBrown = classes * canBrown;
+         System.out.println("В школе, где " + classes + " классов, нужно " + allWhite + " банок белой краски и " + allBrown + " банок коричневой краски.");
+        System.out.println();
 
 
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        System.out.println();
 
+        byte bananaWeight = 80;
+        byte milkWeight = 105;
+        byte iceWeight = 100;
+        byte eggWeight = 70;
+
+        int grammWeight = bananaWeight * 5 + milkWeight * 2 + iceWeight * 2 + eggWeight * 4;
+        System.out.println("Вес напитка " + grammWeight + " граммов!");
+
+        float kgWeight = grammWeight / 1000f;
+        System.out.println("Вес напитка " + kgWeight + " кг !");
+        System.out.println("Вес напитка " + grammWeight * 0.001 + " кг !");
+        System.out.println();
+
+
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        System.out.println();
+
+        short weight = 7000;
+        short  loseLight = 250;
+        short loseHard = 500;
+
+        int dayLoseLigth = weight / loseLight;
+        int dayLoseHard = weight / loseHard;
+
+        int someDay = (dayLoseHard + dayLoseLigth) / 2;
+
+        System.out.println("По легкой диете удет " + dayLoseLigth + " дней.");
+        System.out.println("По тяжелой диете удет " + dayLoseHard + " дней.");
+        System.out.println("Среднее количество " + someDay + " дней на диету.");
+        System.out.println();
 
 
     }
