@@ -8,21 +8,23 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1 () {
         System.out.println("Задача 1");
+        System.out.println();
         int dima = 1;
         byte sasha = 24;
         short lena = 3455;
         long lida = 4546445577575674L;
         float gena = 5.35756f;
         double felix = 8.883366444553355;
-        System.out.println(dima);
-        System.out.println(sasha);
-        System.out.println(lena);
-        System.out.println(lida);
-        System.out.println(gena);
-        System.out.println(felix);
+        System.out.println("Значение переменной dima с типом int равно " + dima);
+        System.out.println("Значение переменной sasha с типом byte равно " + sasha);
+        System.out.println("Значение переменной lena с типом short равно " + lena);
+        System.out.println("Значение переменной lida с типом long равно " + lida);
+        System.out.println("Значение переменной gena с типом float равно " + gena);
+        System.out.println("Значение переменной felix с типом double равно " + felix);
         System.out.println();
     }
 
@@ -121,6 +123,35 @@ System.out.println("Всего учеников : " + children);
         System.out.println("По легкой диете удет " + dayLoseLigth + " дней.");
         System.out.println("По тяжелой диете удет " + dayLoseHard + " дней.");
         System.out.println("Среднее количество " + someDay + " дней на диету.");
+        System.out.println();
+
+
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        System.out.println();
+
+        int masha = 67760;
+        int  denis  = 83690;
+        int krist = 76320;
+        float index = 1.1f;
+        float indexMasha = masha * index;
+        float differenceMasha = indexMasha % masha;
+        System.out.println("Маша теперь получает " + indexMasha + " рублей. Годовой доход вырос на " + differenceMasha * 12 + " рублей.");
+
+
+
+
+        float indexDenis = denis * index;
+        float differenceDenis = indexDenis % denis;
+        System.out.println("Денис теперь получает " + indexDenis + " рублей. Годовой доход вырос на " + differenceDenis * 12 + " рублей.");
+        //альнернатива
+        System.out.println("Денис теперь получает " + denis * 1.1 + " рублей. Годовой доход вырос на " + denis * 0.1 * 12 + " рублей.");
+        System.out.println("Денис теперь получает " + denis * 1.1f + " рублей. Годовой доход вырос на " + denis * 0.1 * 12 + " рублей.");
+
+        System.out.println("Кристина теперь получает " + krist * 1.1f + " рублей. Годовой доход вырос на " + krist * 0.1 * 12 + " рублей.");
+
+
         System.out.println();
 
 
